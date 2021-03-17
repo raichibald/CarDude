@@ -153,7 +153,6 @@ extension CarListViewController: UITableViewDataSource, UITableViewDelegate {
         if filterByDistance {
             return sortedCars.count
         } else if isSearching {
-            print(filteredData)
             return filteredData.count
         } else {
             return cars.count
