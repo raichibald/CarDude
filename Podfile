@@ -8,7 +8,6 @@ target 'CarDude' do
   # Pods for CarDude
 pod 'Alamofire', '~> 5.2'
 pod 'Kingfisher', '~> 6.0'
-pod 'SwiftyJSON'
 pod 'DropDown'
 
 end
