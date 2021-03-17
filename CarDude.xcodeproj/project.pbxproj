@@ -3,45 +3,131 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A3A6C56B9C5D75665E74D3E /* Pods_CarDude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F106B9A0E977B7CBC8A5F490 /* Pods_CarDude.framework */; };
+		B30081C02600C62E00415E1A /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30081BF2600C62E00415E1A /* Car.swift */; };
+		B30081C42600C78200415E1A /* CarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30081C32600C78200415E1A /* CarManager.swift */; };
+		B30081CB2600CFB900415E1A /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30081CA2600CFB900415E1A /* CarCell.swift */; };
+		B34A0E022601192800E90BD4 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34A0E002601192800E90BD4 /* FilterCell.swift */; };
+		B34A0E032601192800E90BD4 /* FilterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B34A0E012601192800E90BD4 /* FilterCell.xib */; };
+		B3E44FC726027C4A00FDDA34 /* CarDudeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E44FC626027C4A00FDDA34 /* CarDudeTests.swift */; };
+		B3E44FD12602862B00FDDA34 /* CarDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E44FD02602862B00FDDA34 /* CarDataTests.swift */; };
 		B3EE0AA42600C372008219EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EE0AA32600C372008219EE /* AppDelegate.swift */; };
 		B3EE0AA62600C372008219EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EE0AA52600C372008219EE /* SceneDelegate.swift */; };
-		B3EE0AA82600C372008219EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EE0AA72600C372008219EE /* ViewController.swift */; };
+		B3EE0AA82600C372008219EE /* CarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EE0AA72600C372008219EE /* CarListViewController.swift */; };
 		B3EE0AAB2600C372008219EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3EE0AA92600C372008219EE /* Main.storyboard */; };
 		B3EE0AAD2600C373008219EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3EE0AAC2600C373008219EE /* Assets.xcassets */; };
 		B3EE0AB02600C373008219EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3EE0AAE2600C373008219EE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B3E44FC926027C4A00FDDA34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3EE0A982600C372008219EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3EE0A9F2600C372008219EE;
+			remoteInfo = CarDude;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		21283B8749A91F4AA3F7BB5D /* Pods-CarDude.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarDude.debug.xcconfig"; path = "Target Support Files/Pods-CarDude/Pods-CarDude.debug.xcconfig"; sourceTree = "<group>"; };
+		B30081BF2600C62E00415E1A /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		B30081C32600C78200415E1A /* CarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarManager.swift; sourceTree = "<group>"; };
+		B30081CA2600CFB900415E1A /* CarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCell.swift; sourceTree = "<group>"; };
+		B34A0E002601192800E90BD4 /* FilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
+		B34A0E012601192800E90BD4 /* FilterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterCell.xib; sourceTree = "<group>"; };
+		B3E44FC426027C4900FDDA34 /* CarDudeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarDudeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E44FC626027C4A00FDDA34 /* CarDudeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDudeTests.swift; sourceTree = "<group>"; };
+		B3E44FC826027C4A00FDDA34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3E44FD02602862B00FDDA34 /* CarDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDataTests.swift; sourceTree = "<group>"; };
 		B3EE0AA02600C372008219EE /* CarDude.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarDude.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3EE0AA32600C372008219EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3EE0AA52600C372008219EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B3EE0AA72600C372008219EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B3EE0AA72600C372008219EE /* CarListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewController.swift; sourceTree = "<group>"; };
 		B3EE0AAA2600C372008219EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3EE0AAC2600C373008219EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3EE0AAF2600C373008219EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3EE0AB12600C373008219EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC31E18D41C1AA5D3E1DFCB4 /* Pods-CarDude.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarDude.release.xcconfig"; path = "Target Support Files/Pods-CarDude/Pods-CarDude.release.xcconfig"; sourceTree = "<group>"; };
+		F106B9A0E977B7CBC8A5F490 /* Pods_CarDude.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarDude.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B3EE0A9D2600C372008219EE /* Frameworks */ = {
+		B3E44FC126027C4900FDDA34 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B3EE0A9D2600C372008219EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A3A6C56B9C5D75665E74D3E /* Pods_CarDude.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B30081BB2600C5F300415E1A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B3EE0AA72600C372008219EE /* CarListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B30081BC2600C60200415E1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B30081BF2600C62E00415E1A /* Car.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B30081BD2600C60B00415E1A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B30081C32600C78200415E1A /* CarManager.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B30081BE2600C61A00415E1A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B3EE0AA92600C372008219EE /* Main.storyboard */,
+				B30081CA2600CFB900415E1A /* CarCell.swift */,
+				B34A0E002601192800E90BD4 /* FilterCell.swift */,
+				B34A0E012601192800E90BD4 /* FilterCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B3E44FC526027C4A00FDDA34 /* CarDudeTests */ = {
+			isa = PBXGroup;
+			children = (
+				B3E44FC626027C4A00FDDA34 /* CarDudeTests.swift */,
+				B3E44FC826027C4A00FDDA34 /* Info.plist */,
+				B3E44FD02602862B00FDDA34 /* CarDataTests.swift */,
+			);
+			path = CarDudeTests;
+			sourceTree = "<group>";
+		};
 		B3EE0A972600C372008219EE = {
 			isa = PBXGroup;
 			children = (
 				B3EE0AA22600C372008219EE /* CarDude */,
+				B3E44FC526027C4A00FDDA34 /* CarDudeTests */,
 				B3EE0AA12600C372008219EE /* Products */,
+				DE5EB7047E4FE0CA54871CF6 /* Pods */,
+				FDEC3E211F0F7549FA3EB771 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				B3EE0AA02600C372008219EE /* CarDude.app */,
+				B3E44FC426027C4900FDDA34 /* CarDudeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +145,10 @@
 			children = (
 				B3EE0AA32600C372008219EE /* AppDelegate.swift */,
 				B3EE0AA52600C372008219EE /* SceneDelegate.swift */,
-				B3EE0AA72600C372008219EE /* ViewController.swift */,
-				B3EE0AA92600C372008219EE /* Main.storyboard */,
+				B30081BD2600C60B00415E1A /* ViewModels */,
+				B30081BC2600C60200415E1A /* Model */,
+				B30081BB2600C5F300415E1A /* Controllers */,
+				B30081BE2600C61A00415E1A /* Views */,
 				B3EE0AAC2600C373008219EE /* Assets.xcassets */,
 				B3EE0AAE2600C373008219EE /* LaunchScreen.storyboard */,
 				B3EE0AB12600C373008219EE /* Info.plist */,
@@ -67,16 +156,53 @@
 			path = CarDude;
 			sourceTree = "<group>";
 		};
+		DE5EB7047E4FE0CA54871CF6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21283B8749A91F4AA3F7BB5D /* Pods-CarDude.debug.xcconfig */,
+				EC31E18D41C1AA5D3E1DFCB4 /* Pods-CarDude.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FDEC3E211F0F7549FA3EB771 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F106B9A0E977B7CBC8A5F490 /* Pods_CarDude.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B3E44FC326027C4900FDDA34 /* CarDudeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3E44FCB26027C4A00FDDA34 /* Build configuration list for PBXNativeTarget "CarDudeTests" */;
+			buildPhases = (
+				B3E44FC026027C4900FDDA34 /* Sources */,
+				B3E44FC126027C4900FDDA34 /* Frameworks */,
+				B3E44FC226027C4900FDDA34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3E44FCA26027C4A00FDDA34 /* PBXTargetDependency */,
+			);
+			name = CarDudeTests;
+			productName = CarDudeTests;
+			productReference = B3E44FC426027C4900FDDA34 /* CarDudeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B3EE0A9F2600C372008219EE /* CarDude */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3EE0AB42600C373008219EE /* Build configuration list for PBXNativeTarget "CarDude" */;
 			buildPhases = (
+				9E82A9E3501DB830F91CC6D8 /* [CP] Check Pods Manifest.lock */,
 				B3EE0A9C2600C372008219EE /* Sources */,
 				B3EE0A9D2600C372008219EE /* Frameworks */,
 				B3EE0A9E2600C372008219EE /* Resources */,
+				5B4708C4E4172CF5915A3B70 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +222,10 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					B3E44FC326027C4900FDDA34 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = B3EE0A9F2600C372008219EE;
+					};
 					B3EE0A9F2600C372008219EE = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -115,16 +245,25 @@
 			projectRoot = "";
 			targets = (
 				B3EE0A9F2600C372008219EE /* CarDude */,
+				B3E44FC326027C4900FDDA34 /* CarDudeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B3E44FC226027C4900FDDA34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B3EE0A9E2600C372008219EE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B3EE0AB02600C373008219EE /* LaunchScreen.storyboard in Resources */,
+				B34A0E032601192800E90BD4 /* FilterCell.xib in Resources */,
 				B3EE0AAD2600C373008219EE /* Assets.xcassets in Resources */,
 				B3EE0AAB2600C372008219EE /* Main.storyboard in Resources */,
 			);
@@ -132,18 +271,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5B4708C4E4172CF5915A3B70 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CarDude/Pods-CarDude-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CarDude/Pods-CarDude-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CarDude/Pods-CarDude-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E82A9E3501DB830F91CC6D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarDude-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		B3E44FC026027C4900FDDA34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3E44FD12602862B00FDDA34 /* CarDataTests.swift in Sources */,
+				B3E44FC726027C4A00FDDA34 /* CarDudeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B3EE0A9C2600C372008219EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3EE0AA82600C372008219EE /* ViewController.swift in Sources */,
+				B34A0E022601192800E90BD4 /* FilterCell.swift in Sources */,
+				B30081CB2600CFB900415E1A /* CarCell.swift in Sources */,
+				B3EE0AA82600C372008219EE /* CarListViewController.swift in Sources */,
 				B3EE0AA42600C372008219EE /* AppDelegate.swift in Sources */,
+				B30081C42600C78200415E1A /* CarManager.swift in Sources */,
+				B30081C02600C62E00415E1A /* Car.swift in Sources */,
 				B3EE0AA62600C372008219EE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3E44FCA26027C4A00FDDA34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3EE0A9F2600C372008219EE /* CarDude */;
+			targetProxy = B3E44FC926027C4A00FDDA34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B3EE0AA92600C372008219EE /* Main.storyboard */ = {
@@ -165,6 +367,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B3E44FCC26027C4A00FDDA34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62UWXAK3LX;
+				INFOPLIST_FILE = CarDudeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.raitissaripo.CarDudeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarDude.app/CarDude";
+			};
+			name = Debug;
+		};
+		B3E44FCD26027C4A00FDDA34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62UWXAK3LX;
+				INFOPLIST_FILE = CarDudeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.raitissaripo.CarDudeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarDude.app/CarDude";
+			};
+			name = Release;
+		};
 		B3EE0AB22600C373008219EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -283,6 +525,7 @@
 		};
 		B3EE0AB52600C373008219EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21283B8749A91F4AA3F7BB5D /* Pods-CarDude.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -303,6 +546,7 @@
 		};
 		B3EE0AB62600C373008219EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC31E18D41C1AA5D3E1DFCB4 /* Pods-CarDude.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -324,6 +568,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B3E44FCB26027C4A00FDDA34 /* Build configuration list for PBXNativeTarget "CarDudeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3E44FCC26027C4A00FDDA34 /* Debug */,
+				B3E44FCD26027C4A00FDDA34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B3EE0A9B2600C372008219EE /* Build configuration list for PBXProject "CarDude" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
