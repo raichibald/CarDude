@@ -212,9 +212,9 @@ extension CarListViewController: UISearchBarDelegate {
         isSearching = true
         
         if filterControl.selectedSegmentIndex == 0 {
-            filteredData = cars.filter { ($0.plateNumber?.contains(searchBar.text!))! }
+            filteredData = cars.filter { ($0.plateNumber?.localizedCaseInsensitiveContains(searchBar.text!))! }
         } else {
-            filteredData = cars.filter { (String($0.batteryPercentage ?? 0).contains(searchBar.text!)) }
+            filteredData = cars.filter { (String($0.batteryPercentage ?? 0).localizedCaseInsensitiveContains(searchBar.text!)) }
         }
         
         searchBar.endEditing(true)
